@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>My Docs</title>
+        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href=".">My Docs</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#penambangan-data">PENAMBANGAN DATA</a></li>
+        <li class="main "><a href="#statistik-deskriptif">Statistik Deskriptif</a></li>
+            <li><a href="#3-modus">3.  Modus</a></li>
+            <li><a href="#4-variansi-dan-standart-variansi">4. Variansi dan standart Variansi</a></li>
+            <li><a href="#5-range">5. Range</a></li>
+            <li><a href="#6-quartil">6. Quartil</a></li>
+            <li><a href="#7-skewness">7. Skewness</a></li>
+        <li class="main "><a href="#mengukur-jarak-atribut-binary">Mengukur Jarak Atribut Binary</a></li>
+            <li><a href="#mengukur-jarak-tipe-categorical">Mengukur Jarak Tipe categorical</a></li>
+            <li><a href="#overlay-metric">Overlay Metric</a></li>
+            <li><a href="#value-difference-metric-vdm">Value Difference Metric (VDM)</a></li>
+            <li><a href="#minimum-risk-metric-mrm">Minimum Risk Metric (MRM)</a></li>
+            <li><a href="#mengukur-jarak-tipe-ordinal">Mengukur Jarak Tipe Ordinal</a></li>
+            <li><a href="#selection-feature">SELECTION FEATURE</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="penambangan-data">PENAMBANGAN DATA</h1>
+<h1 id="statistik-deskriptif">Statistik Deskriptif</h1>
+<p>Statistik deskriptif adalah salah satu bagian dari ilmu statistika yang berhubungan dengan aktivitas penghimpunan, penataan, peringkasan dan penyajian data dengan harapan agar data lebih bermakna, mudah dibaca dan mudah dipahami oleh pengguna data. Statistik deskriptif hanya sebatas memberikan deskripsi atau gambaran umum tentang karakteristik objek yang diteliti tanpa maksud untuk melakukan generalisasi sampel terhadap populasi.</p>
+<p>​   Kegiatan dalam statistik deskriptif meliputi pengumpulan, pengelompokan dan pengolahan data yang selanjutnya akan menghasilkan ukuran-ukuran statistik seperti frekuensi, pemusatan data, penyebaran data, kecenderungan suatu gugus data dan lain-lain. Selain itu, agar data lebih mudah dibaca dan dipahami maka data dapat diringkas dalam bentuk tabulasi atau disajikan dalam bentuk grafik atau diagram, beberapa yang akan kita bahas yaitu :</p>
+<ul>
+<li>
+<p>Rata-rata</p>
+</li>
+<li>
+<p>Median</p>
+</li>
+<li>
+<p>Modus</p>
+</li>
+<li>
+<p>Variansi</p>
+</li>
+<li>
+<p>Standar Deviasi</p>
+</li>
+<li>
+<p>Range </p>
+</li>
+<li>
+<p>Quartil</p>
+</li>
+<li>
+<p>Skewness</p>
+</li>
+</ul>
+<p>## 1. Rata - rata</p>
+<p>​ Rata-rata adalah nilai yang mewakili sekelompok data. Rata-rata diperoleh dari penjumlahan seluruh nilai data dibagi dengan banyaknya data.</p>
+<p>## 2. Median</p>
+<p>​ Untuk data miring (asimetris), ukuran pusat data yang lebih baik adalah median, yang merupakan nilai tengah dalam satu set nilai data yang diurutkan. Ini adalah nilai yang memisahkan separuh data yang lebih tinggi dari data tersebut dan sebagian data yang lebih rendah dari data tersebut. Dalam probabilitas dan statistik, median umumnya berlaku untuk data numerik; namun, kami dapat memperluas konsep menjadi data ordinal. Misalkan kumpulan N data yang diberikan untuk atribut X diurutkan dalam urutan naik. Jika N ganjil, maka median adalah nilai tengah dari data yang ordinal. Jika N adalah genap, maka mediannya tidak unik; dihitung dengan rata rata dari nilai </p>
+<h2 id="3-modus">3.  Modus</h2>
+<p>Modus adalah nilai yang sering muncul dalam sekelompok data.</p>
+<h2 id="4-variansi-dan-standart-variansi">4. Variansi dan standart Variansi</h2>
+<p><em>Varian</em> adalah rata-rata jarak kuadrat antara data ke rata-rata.</p>
+<h2 id="5-range">5. Range</h2>
+<p><em>Jangkauan (Range)</em> adalah ukuran dari selisih nilai maksimum dengan nilai minimum yang ada dalam sekelompok data.R = x_{max} - x_{min} <em>R</em>=xmax−xmin</p>
+<h2 id="6-quartil">6. Quartil</h2>
+<p>Kuartil memberikan gambaran pusat distribus, penyebaran, dan bentuk distribusi. Kuartil satu, dilambangkan oleh Q1, adalah persentil ke-25. Nilai ini menunjukan 25% terendah dari data. Kuartil ketiga, dilambangkan oleh Q3, adalah persentil ke-75 - itu memisahkan data 75% dari terendah data (atau 25% dari tertinggi data. </p>
+<h2 id="7-skewness">7. Skewness</h2>
+<p>​   Derajat distorsi dari kurva lonceng simetris atau distribusi normal. Ini mengukur kurangnya simetri dalam distribusi data Untuk menghitung derajat distorisi dapat menggunakan Koefisien Kemencengan Pearson yang diperoleh dengan menggunakan nilai selisih rata-rata dengan modus dibagi simpangan baku</p>
+<p><img alt="" src="C:\Users\ASUS\newdatamining\foto\10.PNG" /></p>
+<p><img alt="11" src="C:\Users\ASUS\newdatamining\foto\11.PNG" /></p>
+<p><img alt="12" src="C:\Users\ASUS\newdatamining\foto\12.PNG" /></p>
+<p><img alt="13" src="C:\Users\ASUS\newdatamining\foto\13.PNG" /></p>
+<h1 id="mengukur-jarak-atribut-binary">Mengukur Jarak Atribut Binary</h1>
+<h4 id="mengukur-jarak-tipe-categorical">Mengukur Jarak Tipe categorical</h4>
+<h3 id="overlay-metric"><em>Overlay Metric</em></h3>
+<p>Ketika semua atribut adalah bertipe nominal, ukuran jarak yang paling sederhana adalah dengan Ovelay Metric (OM) yang dinyatakan dengan dimana nn adalah banyaknya atribut, ai(x)ai(x) dan ai(y)ai(y) adalah nilai atribut ke ii yaitu AiAi dari masing masing objek xx dan yy, δ (ai(x),ai(y))δ (ai(x),ai(y)) adalah 0 jika ai(x)=ai(y)ai(x)=ai(y) dan 1 jika sebaliknya.</p>
+<p>OM banyak digunakan oleh instance-based learning dan locally weighted learning. Jelas sekali , ini sedikit beruk untuk mengukur jarak antara masing-masing pasangan sample, karena gagal memanfaatkan tambahan informasi yang diberikan oleh nilai atribut nominal yang bisa membantu dalam generalisasi.</p>
+<h3 id="value-difference-metric-vdm"><em>Value Difference Metric (VDM)</em></h3>
+<p>VDM dikenalkan oleh Standfill and Waltz, versi sederhana dari VDM tanpa skema pembobotan didefinsisikan dengan dimana CCadalah banyaknya kelas, P(c|ai(x))P(c|ai(x)) adalah probabilitas bersyarat dimana kelas xx adalah cc dari atribut AiAi, yang memiliki nilai ai(x)ai(x), P(c|ai(y))P(c|ai(y)) adalah probabilitas bersyarat dimana kelas yy adalah cc dengan atribut AiAi memiliki nilai ai(y)ai(y)</p>
+<p>VDM mengasumsikan bahwa dua nilai dari atribut adalah lebih dekat jika memiliki klasifikasi sama. Pendekatan lain berbasi probabilitas adalah SFM (Short and Fukunaga Metric) yang kemudian dikembangkan oleh Myles dan Hand dan didefinisikan.</p>
+<h3 id="minimum-risk-metric-mrm"><em>Minimum Risk Metric (MRM)</em></h3>
+<p>Ukuran ini dipresentasikan oleh Blanzieri and Ricci, berbeda dari SFM yaitu meminimumkan selisih antara kesalahan berhingga dan kesalahan asymtotic. MRM meminimumkan risk of misclassification yang didefinisikan.</p>
+<h2 id="mengukur-jarak-tipe-ordinal">Mengukur Jarak Tipe Ordinal</h2>
+<p>Nilai-nilai atribut ordinal memiliki urutan atau peringkat, namun besarnya antara nilai-nilai berturut-turut tidak diketahui. Contohnya tingkatan kecil, sedang, besar untuk atribut ukuran. Atribut ordinal juga dapat diperoleh dari diskritisasi atribut numerik dengan membuat rentang nilai ke dalam sejumlah kategori tertentu. Kategori-kategori ini disusun dalam peringkat. Yaitu, rentang atribut numerik dapat dipetakan ke atribut ordinal ff yang memiliki MfMf state. Misalnya, kisaran suhu atribut skala-skala (dalam Celcius)dapat diatur ke dalam status berikut: −30 hingga −10, −10 hingga 10, 10 hingga 30, masing-masing mewakili kategori suhu dingin, suhu sedang, dan suhu hangat. MM adalah jumlah keadaan yang dapat dilakukan oleh atribut ordinalmemiliki. State ini menentukan peringkat 1,...,Mf1,...,Mf</p>
+<p>Perlakuan untuk atribut ordinal adalah cukup sama dengan atribut numerik ketika menghitung disimilarity antara objek. Misalkan ff adalah atribut-atribut dari atribut ordinal dari nn objek. Menghitung disimilarity terhadap f fitur sebagai berikut:</p>
+<ul>
+<li>
+<p>Nilai ff untuk objek ke-ii adalah xifxif, dan ff memiliki MfMf status urutan , mewakili peringkat 1,..,Mf1,..,Mf Ganti setiap xifxif dengan peringkatnya, rif∈{1...Mf}rif∈{1...Mf}</p>
+</li>
+<li>
+<p>Karena setiap atribut ordinal dapat memiliki jumlah state yang berbeda, diperlukan untuk memetakan rentang setiap atribut ke [0,0, 1.0] sehingga setiap atribut memiliki bobot yang sama. Perl melakukan normalisasi data dengan mengganti peringkat rifrif denganzif=rif−1Mf−1zif=rif−1Mf−1</p>
+</li>
+<li>
+<p>Dissimilarity kemudian dihitung dengan menggunakan ukuran jarak seperti atribut numerik dengan data yang baru setelah ditransformasi $ z _ { i f }</p>
+</li>
+</ul>
+<p>## Menghitung Jarak Tipe Campuran</p>
+<p>Menghitung ketidaksamaan antara objek dengan atribut campuran yang berupa nominal, biner simetris, biner asimetris, numerik, atau ordinal yang ada pada kebanyakan databasae dapat dinyatakan dengan memproses semua tipe atribut secara bersamaan. Salah satu teknik tersebut menggabungkan atribut yang berbeda ke dalam matriks ketidaksamaan tunggal dan menyatakannya dengan skala interval antar [0,0,1.0][0,0,1.0]. Misalkan data berisi atribut pp tipe campuran. Ketidaksamaan (disimilarity ) antara objek ii dan jj dinyatakan dengan</p>
+<p>d(i,j)=∑pf=1δ(f)ijd(f)ij∑pf=1δ(f)ijd(i,j)=∑f=1pδij(f)dij(f)∑f=1pδij(f)</p>
+<p>dimana δfij=0δijf=0 - jika xifxif atau xjfxjf adalah hilang (i.e., tidak ada pengukuran dari atribut f untuk objek ii atau objek jj)</p>
+<ul>
+<li>jika xif=xjf=0xif=xjf=0 dan</li>
+<li>atribut ff adalah binary asymmetric,</li>
+</ul>
+<p>selain itu δfij=1δijf=1</p>
+<p>Kontribusi dari atribut ff untuk dissimilarity antara i dan j (yaitu.dfijdijf) dihitung bergantung pada tipenya,</p>
+<ul>
+<li>
+<p>Jika ff adalah numerik, dfij=∥xif−xjf∥maxhxhf−minhxhfdijf=‖xif−xjf‖maxhxhf−minhxhf, di mana h menjalankan semua nilai objek yang tidak hilang untuk atribut f</p>
+</li>
+<li>
+<p>Jika ff adalah nominal atau binary,$d_{ij}^{f}=0 $jika xif=xjfxif=xjf, sebaliknya dfij=1dijf=1</p>
+</li>
+<li>
+<p>Jika ff adalah ordinal maka hitung rangking rifrif dan zif=rif−1Mf−1zif=rif−1Mf−1 , dan perlakukan zifzif sebagai numerik.</p>
+<p><img alt="" src="C:\Users\ASUS\newdatamining\foto\14.PNG" /></p>
+<p><img alt="15" src="C:\Users\ASUS\newdatamining\foto\15.PNG" /></p>
+<p><img alt="16" src="C:\Users\ASUS\newdatamining\foto\16.PNG" /></p>
+</li>
+</ul>
+<h2 id="selection-feature">SELECTION FEATURE</h2>
+<p>Pemilihan (seleksi) data dari sekumpulan data operasional perlu dilakukan sebelum tahap penggalian informasi dalam KDD dimulai. Data hasil seleksi yang digunakan untuk proses data mining, disimpan dalam suatu berkas, terpisah dari basis data operasional.</p>
+<p>Entropy Target</p>
+<ul>
+<li>
+<p>Entropy (S) merupakan jumlah bit yang diperkirakan dibutuhkan untuk dapat mengekstrak suatu kelas (+ atau -) dari sejumlah data acak pada ruang sampel S.</p>
+</li>
+<li>
+<p>Entropy dapat dikatakan sebagai kebutuhan bit untuk menyatakan suatu kelas.</p>
+</li>
+<li>
+<p>Entropy digunakan untuk mengukur ketidakaslian S.</p>
+</li>
+</ul>
+<p><img alt="" src="C:\Users\ASUS\newdatamining\foto\8.PNG" /></p>
+<p><img alt="" src="C:\Users\ASUS\newdatamining\foto\1.PNG" /></p>
+<p><img alt="" src="C:\Users\ASUS\newdatamining\foto\2.PNG" /></p>
+<p><img alt="3" src="C:\Users\ASUS\newdatamining\foto\3.PNG" /></p>
+<p><img alt="4" src="C:\Users\ASUS\newdatamining\foto\4.PNG" /></p>
+<p>Information GAIN</p>
+<ul>
+<li>
+<p>Gain (S,A) merupakan perolehan informasi dari atribut A relative terhadap output data S.</p>
+</li>
+<li>
+<p>Perolehan informasi didapat dari output data atau variable dependent S yang dikelompokkan berdasarkan atribut A, dinotasikan dengan gain (S,A).</p>
+</li>
+</ul>
+<p><img alt="" src="C:\Users\ASUS\newdatamining\foto\9.PNG" /></p>
+<p><img alt="" src="C:\Users\ASUS\newdatamining\foto\5.PNG" /></p>
+<p><img alt="6" src="C:\Users\ASUS\newdatamining\foto\6.PNG" /></p>
+<p><img alt="7" src="C:\Users\ASUS\newdatamining\foto\7.PNG" /></p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.0.4
+Build Date UTC : 2019-09-25 18:05:56
+-->
